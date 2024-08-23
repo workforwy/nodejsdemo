@@ -1,8 +1,8 @@
-const fs = require('fs');
-const child_process = require('child_process');
+import fs from 'fs';
+import { exec } from 'child_process';
 
 for (var i = 0; i < 3; i++) {
-  var workerProcess = child_process.exec(
+  var workerProcess = exec(
     `node ./src/demo/thread/support.js ` + i,
     function (error, stdout, stderr) {
       if (error) {

@@ -1,7 +1,7 @@
-const mysql = require('mysql2');
-const { mysqlDateBase } = require('../../config');
+import { createConnection } from 'mysql2';
+import { mysqlDateBase } from '../../config';
 
-const connection = mysql.createConnection(mysqlDateBase);
+const connection = createConnection(mysqlDateBase);
 
 connection.connect((err) => {
   if (err) {

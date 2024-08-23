@@ -1,5 +1,5 @@
-const { MongoClient } = require('mongodb');
-const { mongeoDateBase } = require('../../config');
+import { MongoClient } from 'mongodb';
+import { mongeoDateBase } from '../../config';
 
 async function main() {
   // MongoDB 连接 URI
